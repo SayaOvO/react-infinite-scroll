@@ -1,0 +1,31 @@
+:root,
+html,
+body {
+	height: 100%;
+	line-height: 1.5;
+}
+
+body,
+h1,
+p,
+div {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	display: block;
+}
+
+figure {
+	padding: 0;
+	margin: 0;
+}
+
+dd {
+	margin-left: 24px;
+}
+
+dl {
+	margin-block: 0.5em;
+}
