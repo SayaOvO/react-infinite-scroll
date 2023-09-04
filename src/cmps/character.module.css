@@ -1,12 +1,25 @@
 .card {
 	border: 1px solid #f1f5f9;
 	border-radius: 8px;
-	box-shadow: 0 4px 6px -4px rgb(0 0 0 / 0.1);
-	transition: transform 300ms ease-in-out;
+	transition: transform 1s ease;
+	position: relative;
 }
 
+.card::after {
+	content: '';
+	position: absolute;
+	inset: 0;
+	box-shadow: 0 4px 6px -4px rgb(0 0 0 / .1);
+	opacity: 0;
+	transition: opacity 1s ease;
+	border-radius: 8px;
+}
 .card:hover {
-	transform: scale(1.02)
+	transform: scale(1.02);
+}
+
+.card:hover::after {
+	opacity: 1;
 }
 
 .image-container {
